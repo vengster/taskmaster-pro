@@ -128,7 +128,7 @@ $(".list-group").on("blur", "input[type='text']", function(){
 $(".card .list-group").sortable({
   connectWith: $(".card .list-group")
 });
-
+// code changes
 
 // modal was triggered
 $("#task-form-modal").on("show.bs.modal", function() {
