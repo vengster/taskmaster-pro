@@ -125,6 +125,10 @@ $(".list-group").on("blur", "input[type='text']", function(){
   $(this).replaceWith(taskSpan);
 });
 
+$(".card .list-group").sortable({
+  connectWith: $(".card .list-group")
+});
+
 
 // modal was triggered
 $("#task-form-modal").on("show.bs.modal", function() {
@@ -171,6 +175,3 @@ $("#remove-tasks").on("click", function() {
 
 // load tasks for the first time
 loadTasks();
-
-
-
